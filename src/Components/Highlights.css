@@ -1,0 +1,64 @@
+#highlights{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  overflow: hidden;
+}
+
+#highlights .title-area{
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+}
+
+#highlights .title-area h1{
+  font-size: calc(14px + 1.125vw);
+}
+
+#highlights .link-btn-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#highlights .link{
+  color: #2997FF;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+#highlights p::after{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.45s;
+}
+
+#highlights p:hover{
+  color: white;
+}
+
+#highlights p:hover::after{
+  width: 80%;
+}
+
+
+@media (max-width:760px) {
+  #highlights .title-area{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
