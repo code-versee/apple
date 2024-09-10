@@ -17,7 +17,7 @@ export function ExtraFeatures(){
       scrollTrigger:{
         trigger:'#frame-video',
         toggleAttribute:'play reverse restart reset',
-        start:'top 65%'
+        start:'top 5%'
       },
       onComplete:()=>{
         videoRef.current.play()
@@ -28,7 +28,7 @@ export function ExtraFeatures(){
       scrollTrigger:{
         trigger:'#frame-video',
         toggleAttribute:'play reverse restart reset',
-        start:'top 65%'
+        start:'top 5%'
       },
       onComplete:()=>{
         backdropVideoRef.current.play()
